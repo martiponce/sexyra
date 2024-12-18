@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="./recursos/css/style.css"> 
+    <link rel="icon" type="image/x-icon"  href="./recursos/img/favicon.ico">
+</head>
+<body>
+    <header>
+        <div class="top-bar">
+            <h1>SEXYRA</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">INICIO</a></li>
+                    <li><a href="productos.html">PRODUCTOS</a></li>
+                    <li><a href="contacto.html">CONTACTO</a></li>
+                    <li class="carrito-nav">
+                        <a id="carrito" onclick="abrirCarrito()">🛒<span id="contador-carrito">0</span></a>
+                    </li>   
+                </ul>
+            </nav>
+            <dialog class="popup-carro" id="popup-carro">
+                <form method="dialog">
+                    <button type="submit">CERRAR</button>
+                </form>
+                <h2>Productos en el Carrito</h2>
+                <section id="contenedor-carro">No hay productos</section>
+            </dialog>
+        </div>
+    </header>
+    <main>
+        <form method="post" action="contacto.html">
+            <label for="nombreapellido">Nombre y Apellido</label>
+            <input type="text" id="nombreapellido" name="nombre" class="imput-padron" required>
+        
+            <label for="correo">Email</label>
+            <input type="email" id="correo" name="correo" class="imput-padron" required placeholder="email@dominio.com">
+        
+            <label for="telefono">Teléfono</label>
+            <input type="tel" id="telefono" name="telefono" class="imput-padron" required placeholder="(XXX) XXX XXXX">
+        
+            <label for="mensaje">Mensaje</label>
+            <textarea cols="70" rows="10" id="mensaje" name="mensaje" class="imput-padron" placeholder="Escriba aquí"></textarea>
+        
+            <fieldset>
+                <legend>¿Cómo te gustaría que te contacte?</legend>
+                <label for="radio-email"><input type="radio" name="contacto" value="email" id="radio-email">Email</label>
+                <label for="radio-telefono"><input type="radio" name="contacto" value="telefono" id="radio-telefono">Teléfono</label>
+                <label for="radio-wasap"><input type="radio" name="contacto" value="whatsapp" id="radio-wasap" checked>WhatsApp</label>
+            </fieldset>
+        
+            <label class="checkbox"><input type="checkbox" name="novedades" checked>¿Te gustaría recibir novedades de Sexyra?</label>
+            <input type="submit" value="Enviar Formulario" class="enviar">
+        </form>
+        <div class="products"></div>
+    </main>    
+    <footer>
+        <div class="footer-content">
+            <div class="nav">
+                <h3>NAVEGACIÓN</h3>
+                <ul>
+                    <li><a href="#">Productos</a></li>
+                    <li><a href="#">Novedades</a></li>
+                    <li><a href="#">¿Quiénes Somos?</a></li>
+                    <li><a href="#">Transparencia</a></li>
+                </ul>
+            </div>
+            <div class="payments">
+                <h3>MEDIOS DE PAGO</h3>
+                <ul>
+                    <li><a href="#">Tranferencia</a></li>
+                </ul>          
+            </div>
+            <div class="social">
+                <h3>REDES SOCIALES</h3>
+                <ul>
+                    <li><a href="https://www.facebook.com/profile.php?id=61562483926309" target="_blank">
+                        <img src="./Recursos/img/facebook.png" alt="Facebook"></a></li>
+                    <li><a href="https://www.instagram.com/sexyra.cba/" target="_blank">
+                        <img src="./Recursos/img/instagram.png" alt="Instagram"></a></li>
+                    <li><a href="https://wa.me/3512923642" target="_blank">
+                        <img src="./Recursos/img/whatsapp.png" alt="WhatsApp"></a></li>
+                </ul>
+            </div>
+            <div class="contact">
+                <h3>CONTACTO</h3>
+                <p>📞 351 555 5555</p>
+                <p>✉️ sexyra.cba@gmail.com</p>
+            </div>
+        </div>
+        <p>&copy; Copyright Sexyra SexShop - 2024</p>
+        <script type="module" src="./recursos/js/main.js"></script>
+    </footer>    
+</body>
+</html>

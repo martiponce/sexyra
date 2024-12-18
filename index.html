@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sexyra</title>
+    <link rel="stylesheet" href="./recursos/css/style.css"> 
+    <link rel="icon" type="image/x-icon"  href="./recursos/img/favicon.ico">
+</head>
+<body>
+    <header>
+        <div class="top-bar">
+        
+            <h1>SEXYRA</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">INICIO</a></li>
+                    <li><a href="productos.html">PRODUCTOS</a></li>
+                    <li><a href="contacto.html">CONTACTO</a></li>
+                    <li class="carrito-nav">
+                        <a id="carrito" onclick="abrirCarrito()">🛒<span id="contador-carrito">0</span></a>
+                    </li>
+                </ul>
+            </nav>
+            <dialog class="popup-carro" id="popup-carro">
+                <form method="dialog">
+                    <button type="submit">CERRAR</button>
+                </form>
+                <h2>Productos en el Carrito</h2>
+                <section id="contenedor-carro">No hay productos</section>
+            </dialog>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="productos.html?categoria=ofertas" data-categoria="ofertas">Ofertas</a></li>
+                <li><a href="productos.html?categoria=anales" data-categoria="anales">Anales</a></li>
+                <li><a href="productos.html?categoria=juegos" data-categoria="juegos">Juegos</a></li>
+                <li><a href="productos.html?categoria=lenceria" data-categoria="lenceria">Lencería</a></li>
+                <li><a href="productos.html?categoria=lubricantes" data-categoria="lubricantes">Lubricantes</a></li>
+                <li><a href="productos.html?categoria=macizos" data-categoria="macizos">Macizos</a></li>                
+                <li><a href="productos.html?categoria=estimuladores" data-categoria="estimuladores">Estimuladores</a></li>
+                <li><a href="productos.html?categoria=bdsm"  data-categoria="bdsm">BDSM</a></li>
+                <li><a href="productos.html?categoria=varios" data-categoria="varios">Varios</a></li>
+            </ul>
+        </div>
+    </header>
+    <section class="banner">
+        <img src="./Recursos/img/Logo completo.png" alt="Banner Seyra">
+    </section>
+    <section class="quienes-somos">
+        <h2>¿Quiénes Somos?</h2>
+        <p>En Sexyra, somos un emprendimiento innovador ubicado en Córdoba Capital, especializado en la venta de productos para el autoconocimiento y disfrute sexual. Nos comprometemos a ofrecer calidad y precios competitivos, siempre con discreción y atención personalizada. Nuestro objetivo es fomentar la exploración personal en un ambiente de confianza y profesionalidad, rompiendo tabúes y creando experiencias únicas para cada cliente.</p>
+    </section>
+    <section class="mapa">
+        <h2 class="titulo-principal">Nuestra Ubicacion</h2>
+        <p>Nuestro establecimiento está ubicado en el centro de la ciudad</p>
+        <div class="mapa-contenido">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d54472.71770576953!2d-64.20308248802534!3d-31.42666380950681!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432985f478f5b69%3A0xb0a24f9a5366b092!2zQ8OzcmRvYmE!5e0!3m2!1ses-419!2sar!4v1731093017778!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>                
+    </section>
+        <div class="products"></div>
+    <footer>
+        <div class="footer-content">
+            <div class="nav">
+                <h3>NAVEGACIÓN</h3>
+                <ul>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="index.html">¿Quiénes Somos?</a></li>
+                    <li><a href="index.html">Transparencia</a></li>
+                </ul>
+            </div>
+            
+            <div class="payments">
+                <h3>MEDIOS DE PAGO</h3>
+                <ul>
+                    <li>Transferencia</li>
+                </ul>          
+            </div>
+            <div class="social">
+                <h3>REDES SOCIALES</h3>
+                <ul>
+                    <li><a href="https://www.facebook.com/profile.php?id=61562483926309" target="_blank">
+                        <img src="./Recursos/img/facebook.png" alt="Facebook"></a></li>
+                    <li><a href="https://www.instagram.com/sexyra.cba/" target="_blank">
+                        <img src="./Recursos/img/instagram.png" alt="Instagram"></a></li>
+                    <li><a href="https://wa.me/3512923642" target="_blank">
+                        <img src="./Recursos/img/whatsapp.png" alt="WhatsApp"></a></li>
+                </ul>
+            </div>
+            <div class="contact">
+                <h3>CONTACTO</h3>
+                <p>📞 351 555 5555</p>
+                <p>✉️ sexyra.cba@gmail.com</p>
+            </div>
+        </div>
+        <p>&copy; Copyright Sexyra SexShop - 2024</p>  
+        <script type="module" src="./recursos/js/main.js"></script>
+    </footer>    
+</body>
+
+</html>
+

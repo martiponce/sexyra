@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sexyra</title>
+    <link rel="stylesheet" href="./recursos/css/style.css"> 
+    <link rel="icon" type="image/x-icon"  href="./recursos/img/favicon.ico">
+</head>
+<body>
+    <header>
+        <div class="top-bar">
+            <div class="search-bar">
+                <input type="text" id="filterName" placeholder="Buscar productos...">
+                <button type="submit">🔍</button>
+            </div>
+            <h1>SEXYRA</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">INICIO</a></li>
+                    <li><a href="productos.html">PRODUCTOS</a></li>
+                    <li><a href="contacto.html">CONTACTO</a></li>
+                    <li class="carrito-nav">
+                        <a id="carrito" onclick="abrirCarrito()">🛒<span id="contador-carrito">0</span></a>
+                    </li>                   
+                </ul>
+            </nav>
+            <dialog class="popup-carro" id="popup-carro">
+                <form method="dialog">
+                    <button type="submit">CERRAR</button>
+                </form>
+                <h2>Productos en el Carrito</h2>
+                <section id="contenedor-carro">No hay productos</section>
+            </dialog>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="productos.html?categoria=ofertas" data-categoria="ofertas">Ofertas</a></li>
+                <li><a href="productos.html?categoria=anales" data-categoria="anales">Anales</a></li>
+                <li><a href="productos.html?categoria=juegos" data-categoria="juegos">Juegos</a></li>
+                <li><a href="productos.html?categoria=lenceria" data-categoria="lenceria">Lencería</a></li>
+                <li><a href="productos.html?categoria=lubricantes" data-categoria="lubricantes">Lubricantes</a></li>
+                <li><a href="productos.html?categoria=macizos" data-categoria="macizos">Macizos</a></li>                
+                <li><a href="productos.html?categoria=estimuladores" data-categoria="estimuladores">Estimuladores</a></li>
+                <li><a href="productos.html?categoria=bdsm"  data-categoria="bdsm">BDSM</a></li>
+                <li><a href="productos.html?categoria=varios" data-categoria="varios">Varios</a></li>
+            </ul>
+        </div>
+    </header>   
+    <section class="banner">
+        <img src="./Recursos/img/Logo completo.png" alt="Banner Seyra">
+    </section>
+    <div class="filter-price">
+        <label for="filterPrice">Precio máximo: $<span id="selectedPrice">50000</span></label>
+        <input type="range" id="filterPrice" min="1000" max="50000" step="1000" value="50000">
+    </div> 
+    <main>
+        <div class="products"></div>
+    </main>    
+    <footer>
+        <div class="footer-content">
+            <div class="nav">
+                <h3>NAVEGACIÓN</h3>
+                <ul>
+                    <li><a href="productos.html">Productos</a></li>                    
+                    <li><a href="index.html">¿Quiénes Somos?</a></li>
+                    <li><a href="index.html">Transparencia</a></li>
+                </ul>
+            </div>
+            <div class="payments">
+                <h3>MEDIOS DE PAGO</h3>
+                <ul>
+                    <li>Transferencia</li>
+                </ul>          
+            </div>
+            <div class="social">
+                <h3>REDES SOCIALES</h3>
+                <ul>
+                    <li><a href="https://www.facebook.com/profile.php?id=61562483926309" target="_blank">
+                        <img src="./Recursos/img/facebook.png" alt="Facebook"></a></li>
+                    <li><a href="https://www.instagram.com/sexyra.cba/" target="_blank">
+                        <img src="./Recursos/img/instagram.png" alt="Instagram"></a></li>
+                    <li><a href="https://wa.me/3512923642" target="_blank">
+                        <img src="./Recursos/img/whatsapp.png" alt="WhatsApp"></a></li>
+                </ul>
+            </div>
+            <div class="contact">
+                <h3>CONTACTO</h3>
+                <p>📞 351 555 5555</p>
+                <p>✉️ sexyra.cba@gmail.com</p>
+            </div>
+        </div>
+        <p>&copy; Copyright Sexyra SexShop - 2024</p>
+        <script type="module" src="./recursos/js/main.js"></script>
+    </footer>   
+</body>
+</html>
